@@ -1,0 +1,24 @@
+html {
+  background-color: #ddd;
+  color: #333;
+  font-family: 'courier new', monospace;
+}
+
+pre {
+  background-color: #000;
+  color: #0f0;
+}
+
+#container {
+  margin: auto;
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 2em;
+  width: 50%;
+  background-color: #333;
+  color: #ddd;
+}
+
+.section {
+  margin-top: 2em;
+}
