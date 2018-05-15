@@ -12,7 +12,15 @@ include_once("./functions.php");
   <p>Blame Technology! Find an excuse or submit your own!</p>
 
   <h3>Random excuse</h3>
-  <?php echo json_encode(random_excuse()); ?>
+  <?php
+    $excuse = (isset($_POST['excuse_id'])) ? random_excuse($_POST['excuse_id']) : random_excuse();
+    print htmlentities($excuse['desc'] . "(".$excuse['id'].")");
+  ?>
+  <form action="index.php" method="POST">
+    <input type="hidden" name="excuse_id" value="<?php print $excuse['id']; ?>"/>
+    <input type="submit" value="Refresh">
+  </form>
+
 
   <h3>Any inputs?</h3>
   <?php if (isset($_POST['excuse'])) {
