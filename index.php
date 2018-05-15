@@ -10,6 +10,7 @@ include_once("./functions.php");
 </head>
 <body>
   <div id="container">
+    <a href="https://github.com/shiftout/tech-excuse"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
     <h1>Tech Excuse Generator</h1>
     <p>Blame Technology! Find an excuse or submit your own!</p>
 
